@@ -3,6 +3,8 @@
     --link: #d40000;
     --p: #181818;
     --textbg: #ffd6d6;
+    --header: #111111;
+    --frametext: #ffd6d6;
 }
 body {
     font-size: 19px; 
@@ -20,6 +22,7 @@ code {
 header {
     font-weight: 700;
     font-size: 125%;
+    color: var(--header);
 }
 p {
     color: var(--p);
@@ -51,7 +54,7 @@ table, th, td {
     margin: 2% auto;
 }
 a.nav-link, a:visited.nav-link {
-    color: var(--textbg);
+    color: var(--frametext);
 }
 a:hover.nav-link {
     background-color: var(--textbg);
@@ -86,10 +89,28 @@ a:hover.nav-link {
 }
 .nav-header {
     margin: 10px;
+    color: var(--frametext);
 }
 .squiggly {
     text-decoration: wavy;
     text-decoration-line: underline;
+}
+ul {
+    color: var(--p);
+}
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --framebg: #1d0f36;
+        --p: #e4e4e4;
+        --textbg: #111a25;
+        --header: #e4e4e4;
+        --frametext: #dadada;
+        --link: #c8ff00;
+    }
+    a:hover.nav-link {
+        background-color: var(--link);
+        color: var(--framebg);
+    }
 }
 @media only screen and (max-width: 700px) {
     body {
