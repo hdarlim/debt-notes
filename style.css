@@ -98,6 +98,9 @@ a:hover.nav-link {
 ul {
     color: var(--p);
 }
+
+/*dark mode*/
+
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --framebg: #19212b;
@@ -112,6 +115,9 @@ ul {
         color: var(--framebg);
     }
 }
+
+/*responsive layout*/
+
 @media only screen and (max-width: 700px) {
     body {
         font-size: 16px; 
