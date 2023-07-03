@@ -1,3 +1,9 @@
+:root {
+    --framebg: #630101;
+    --link: #d40000;
+    --p: #181818;
+    --textbg: #ffd6d6;
+}
 body {
     font-size: 19px; 
     display: flex;
@@ -5,7 +11,7 @@ body {
     height: 100vh;
     min-width: 300px;
     font-family: 'Source Serif 4', serif;
-    background-color: #630101;
+    background-color: var(--framebg);
 }
 code {
     font-family: 'Times New Roman', Times, serif;
@@ -16,7 +22,7 @@ header {
     font-size: 125%;
 }
 p {
-    color: rgb(24, 24, 24);
+    color: var(--p);
 }
 .n-i {
     font-style: normal;
@@ -26,11 +32,11 @@ h1 {
     text-indent: 10px;
 }
 a, a:visited {
-    color: #d40000;
+    color: var(--link);
 }
 a:hover {
-    background-color: #d40000;
-    color: #ffd6d6;
+    background-color: var(--link);
+    color: var(--textbg);
     text-decoration: none;
 }
 .indent {
@@ -38,32 +44,32 @@ a:hover {
     font-size: 115%;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid var(--p);
     border-collapse: collapse;
     text-align: center;
     padding: 1.5%;
     margin: 2% auto;
 }
 a.nav-link, a:visited.nav-link {
-    color: #ffd6d6;
+    color: var(--textbg);
 }
 a:hover.nav-link {
-    background-color: #ffd6d6;
-    color: #630101
+    background-color: var(--textbg);
+    color: var(--framebg);
 }
 #navbar {
-    border: solid #ffd6d6;;
+    border: solid var(--textbg);
     padding: 1%;
     border-top: none;
     border-left: none;
     border-bottom: none;
-    background-color: #630101;
-    color: #ffd6d6;
+    background-color: var(--framebg);
+    color: var(--textbg);
 }
 #main-doc {
     overflow: auto;
     padding: 2%;
-    background-color: #ffd6d6;
+    background-color: var(--textbg);
 }
 .links {
     list-style-type: none;
