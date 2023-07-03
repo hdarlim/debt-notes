@@ -19,7 +19,7 @@
         --link: #c8ff00;
     }
     a:hover.nav-link {
-        background-color: var(--link);
+        background-color: var(--link) !important;
         color: var(--framebg);
     }
 }
