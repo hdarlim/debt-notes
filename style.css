@@ -9,7 +9,7 @@
 
 /*dark mode*/
 
-@media screen and (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
     :root {
         --framebg: #19212b;
         --p: #e4e4e4;
